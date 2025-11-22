@@ -1,0 +1,31 @@
+Hedef: https://google.com
+
++------------+------------------------------+----------------------------------------------------+
+| DURUM      | GÜVENLİK BAŞLIĞI             | AÇIKLAMA                                           |
++============+==============================+====================================================+
+| [31m[-] EKSİK[0m  | [31mStrict-Transport-Security[0m    | [37mTarayıcıyı HTTPS kullanmaya zorlar (Man-in-the-    |
+|            |                              | Middle engeller).[0m                                  |
++------------+------------------------------+----------------------------------------------------+
+| [32m[+] MEVCUT[0m | [32mX-Frame-Options[0m              | [37mSitenin başka sitelerde iframe içine alınmasını    |
+|            |                              | (Clickjacking) engeller.[0m                           |
++------------+------------------------------+----------------------------------------------------+
+| [31m[-] EKSİK[0m  | [31mX-Content-Type-Options[0m       | [37mDosya türü kandırmacalarını (MIME-sniffing)        |
+|            |                              | engeller.[0m                                          |
++------------+------------------------------+----------------------------------------------------+
+| [31m[-] EKSİK[0m  | [31mContent-Security-Policy[0m      | [37mXSS saldırılarını ve veri enjeksiyonunu engelleyen |
+|            |                              | en kritik başlıktır.[0m                               |
++------------+------------------------------+----------------------------------------------------+
+| [32m[+] MEVCUT[0m | [32mX-XSS-Protection[0m             | [37mEski tarayıcılar için dahili XSS filtresini açar.[0m  |
++------------+------------------------------+----------------------------------------------------+
+| [31m[-] EKSİK[0m  | [31mReferrer-Policy[0m              | [37mKullanıcı linke tıkladığında karşı tarafa giden    |
+|            |                              | kaynak bilgisini sınırlar.[0m                         |
++------------+------------------------------+----------------------------------------------------+
+| [31m[-] EKSİK[0m  | [31mPermissions-Policy[0m           | [37mKamera, mikrofon, konum gibi donanımlara izinsiz   |
+|            |                              | erişimi kapatır.[0m                                   |
++------------+------------------------------+----------------------------------------------------+
+| [31m[-] EKSİK[0m  | [31mCross-Origin-Opener-Policy[0m   | [37mSiteyi diğer sekmelerden izole eder (Spectre       |
+|            |                              | saldırılarına karşı).[0m                              |
++------------+------------------------------+----------------------------------------------------+
+| [31m[-] EKSİK[0m  | [31mCross-Origin-Resource-Policy[0m | [37mBaşka sitelerin senin görsellerini/dosyalarını     |
+|            |                              | çalmasını engeller.[0m                                |
++------------+------------------------------+----------------------------------------------------+
